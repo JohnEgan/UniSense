@@ -161,6 +161,12 @@ namespace UniSense
             m_HighFrequenceyMotorSpeed = highFrequency;
         }
 
+        public override int TestFunction(int test)
+        {
+            test = test * 2;
+            return test;
+        }
+
         public void SetGamepadState(DualSenseGamepadState state)
         {
             var command = DualSenseHIDOutputReport.Create();
