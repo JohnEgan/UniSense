@@ -150,7 +150,7 @@ namespace UniSense
             ExecuteCommand(ref command);
         }
 
-        public override void SetMotorSpeeds(float lowFrequency, float highFrequency)
+        public override void SetMotorSpeedss(float lowFrequency, float highFrequency)
         {
             var command = DualSenseHIDOutputReport.Create();
             command.SetMotorSpeeds(lowFrequency, highFrequency);

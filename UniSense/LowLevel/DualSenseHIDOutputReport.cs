@@ -84,7 +84,7 @@ namespace UniSense.LowLevel
 
         public FourCC typeStatic => Type;
 
-        public void SetMotorSpeeds(float lowFreq, float highFreq)
+        public void SetMotorSpeedss(float lowFreq, float highFreq)
         {
             flags1 |= Flags1.MainMotors1 | Flags1.MainMotors2;
             lowFrequencyMotorSpeed = (byte)Mathf.Clamp(lowFreq * 255, 0, 255);
