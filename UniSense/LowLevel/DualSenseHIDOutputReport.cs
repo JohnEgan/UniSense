@@ -86,6 +86,7 @@ namespace UniSense.LowLevel
 
         public void SetMotorSpeeds(float lowFreq, float highFreq)
         {
+	    Debug.Log(HERE);
             flags1 |= Flags1.MainMotors1 | Flags1.MainMotors2;
             lowFrequencyMotorSpeed = (byte)Mathf.Clamp(lowFreq * 255, 0, 255);
             highFrequencyMotorSpeed = (byte)Mathf.Clamp(highFreq * 255, 0, 255);
